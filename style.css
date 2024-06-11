@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header {
+    background-color: #ffa653;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    color: #fff;
+}
+
+header .container a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+header li {
+    list-style: none;
+    display: inline;
+    margin-left: 8px;
+}
+
+section {
+    margin-bottom: 42px;
+}
+
+.sobre .container {
+    display: flex;
+    margin-top: 42px;
+}
+
+.sobre .container div {
+    margin-left: 16px;
+}
+
+.sobre p {
+    margin-top: 8px;
+}
+
+.sobre img {
+    width: 400px;
+}
+
+.container h2 {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #3f3f3f69;
+}
+
+.produtos {
+    padding: 16px 0;
+    display: grid;
+    grid-template-columns: repeat(4,24.25%);
+    column-gap: 1%;
+}
+
+.produto img {
+    width: 100%;
+}
+
+.produto span {
+    display: block;
+    padding: 8px 0;
+    font-weight: bold;
+}
+
+.btn {
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    padding: 8px;
+    background-color: #ffa653;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ffa653;
+    padding: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .container, header .container {
+        padding: 16px;
+    }
+
+    section {
+        margin: 0;
+    }
+
+    .sobre .container {
+        display: block;
+        padding: 16px;
+        margin-top: 0;
+    }
+
+    .sobre .container div {
+        margin-left: 0;
+    }
+
+    .sobre img {
+        width: 90vw;
+        margin-bottom: 16px;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produto {
+        border: none;
+        margin-bottom: 8px;
+    }
+
+    footer {
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .container, header .container {
+        padding: 16px;
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .container li a {
+        font-size: 24px;
+    }
+
+    .sobre .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+    }
+
+    .sobre img {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .sobre .container div {
+        margin-left: 0;
+    }
+
+    section {
+        margin-bottom: 0;
+    }
+
+    .produtos {
+        padding: 16px 0;
+        display: grid;
+        grid-template-columns: repeat(2,49.5%);
+        column-gap: 1%;
+    }
+
+    .produto {
+        margin: 0 16px 16px 0;
+    }
+}
